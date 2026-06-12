@@ -8,6 +8,16 @@ group = project.maven_group
 
 repositories {
 	maven {
+		name = "Ladysnake"
+		url = "https://maven.ladysnake.org/releases"
+	}
+
+	maven {
+		url "https://maven.nucleoid.xyz/"
+		name "Nucleoid"
+	}
+
+	maven {
 		name = "Modrinth"
 		url = "https://api.modrinth.com/maven"
 	}
@@ -48,7 +58,18 @@ dependencies {
 
 	modImplementation "maven.modrinth:fabric-language-kotlin:${project.kotlin_language_version}"
 	modImplementation include("maven.modrinth:fzzy-config:${project.fzzy_config_version}")
-	
+	modImplementation include("maven.modrinth:playerex-directors-cut:${project.playerex_version}")
+
+	modImplementation include("net.objecthunter:exp4j:0.4.8")
+	modImplementation include("eu.pb4:placeholder-api:2.1.4+1.20.1")
+
+	modImplementation "maven.modrinth:owo-lib:${project.owo_version}"
+
+
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cardinal_components_version}"
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cardinal_components_version}"
+
+	compileOnly "org.jetbrains.kotlin:kotlin-stdlib:${project.kotlin_stdlib_version}"
 }
 
 processResources {

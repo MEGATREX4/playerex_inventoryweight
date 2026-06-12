@@ -1,0 +1,11 @@
+{
+  "entries": {
+    "playerex_inventoryweight:carrying": {
+      "enabled": true,
+      "min": 0.0,
+      "max": 100.0,
+      "smoothness": 1.0,
+      "formula": "Flat"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "entries": {
+    "minecraft:player": {
+      "playerex_inventoryweight:carrying": {
+        "value": 0.0
+      }
+    }
+  }
+}
