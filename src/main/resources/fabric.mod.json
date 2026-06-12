@@ -30,6 +30,7 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"inventoryweight": "*",
-		"playerex": "*"
+		"playerex": "*",
+		"fzzy_config": "*"
 	}
 }
